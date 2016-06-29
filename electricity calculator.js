@@ -1,6 +1,6 @@
 /* 
- * CSCI 2356 Chapter 4- Programming Project 4-6
- * Md.Riad Arifin (A00395462)
+ * A program to calculate power
+ * Md.Riad Arifin 
  */
 
 //to display the value
