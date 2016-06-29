@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>CH04, Programming Project 4-6</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <!-- CSS -->
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+
+        </script> 
+        <script>
+            //for bypassing the chrome error
+            $(document).bind('mobileinit', function () {
+                $.mobile.pushStateEnabled = false;
+            });
+        </script>
+        <!-- JQM -->
+        <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+        <script src="scripts/electricity calculator.js"></script>
+    </head>
+    <body>
+        <div data-role = "page">
+            <center>
+            <div data-role = header>Electricity</br>Calculator</div>
+            </center>
+            <div data-role = "content">
+                  <label for="voltage">Voltage(V):</label><br>
+                  <input type= 'range' name='voltage' id=
+                       'voltage' min='100' max='1000'>
+                </br>
+                   <label for="lowestresistance">Lowest Resistance(&#8486):</label><br>
+                      <input type= 'range' name='lowest resistance' id=
+                       'lowestresistance' min='100' max='1000' >
+                </br>
+                    <label for="highestresistance">Highest Resistance(&#8486):</label><br>
+                       <input type= 'range' name='highestresistance' id=
+                       'highestresistance' min='100' max='1000'>
+                        <button onclick="display();">
+                    Display
+                </button>
+                  <br/>
+                  <table id="table" border="1">
+                      </table>
+                   <div data-role=footer>
+                       <center>
+                <small>Developed by Md.Riad Arifin</small>
+                </center>
+            </div>   
+                </br>
+            </div>
+        </div>
+    </body>
+</html>
